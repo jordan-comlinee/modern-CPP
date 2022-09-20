@@ -1,6 +1,0 @@
-﻿  ch02.cpp
-C:\Users\User\Desktop\ch02\ch02\ch02\ch02.cpp(14,15): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\User\Desktop\ch02\ch02\ch02\ch02.cpp(15,15): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\User\Desktop\ch02\ch02\ch02\ch02.cpp(17,15): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\User\Desktop\ch02\ch02\ch02\ch02.cpp(18,15): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-  ch02.vcxproj -> C:\Users\User\Desktop\ch02\ch02\x64\Debug\ch02.exe
