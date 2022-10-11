@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\ch04",
     "\\ch04\\pointerCost"
+=======
+    "\\ch02",
+    "\\ch02\\ch02"
+>>>>>>> c7789b3fc7bb11cdb3e93f3b4f74f576f0ceac3e
   ],
   "SelectedNode": "\\ch04\\pointerCost\\pointerConst.cpp",
   "PreviewInSolutionExplorer": false
