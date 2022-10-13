@@ -3,9 +3,8 @@
 #include "CBankAccount.h"
 using namespace std;
 
-void transferMoney(CBankAccount sender, CBankAccount reciever, int smoney) {
+void transferMoney(CBankAccount& sender, CBankAccount& reciever, int smoney) {
 	if (sender.withdraw(smoney) == true) {
-		sender.withdraw(smoney);
 		reciever.deposit(smoney);
 	}
 	else {
