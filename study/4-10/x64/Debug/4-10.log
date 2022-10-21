@@ -1,0 +1,3 @@
+﻿  Circle.cpp
+C:\모던 C++\modern-CPP\study\4-10\Circle.cpp(32,11): warning C4804: '<=': 연산에 'bool' 형식을 사용하는 것은 안전하지 않습니다.
+  4-10.vcxproj -> C:\모던 C++\modern-CPP\study\x64\Debug\4-10.exe
