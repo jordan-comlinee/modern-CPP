@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\모던 C++\modern-CPP\study\6-09\main.cpp(17,7): error C2668: 'msg': 오버로드된 함수에 대한 호출이 모호합니다.
+C:\모던 C++\modern-CPP\study\6-09\main.cpp(8,8): message : 'double msg(int,std::string)'일 수 있습니다.
+C:\모던 C++\modern-CPP\study\6-09\main.cpp(4,6): message : 또는       'void msg(int)'
+C:\모던 C++\modern-CPP\study\6-09\main.cpp(17,7): message : 인수 목록 '(int)'을(를) 일치시키는 동안
