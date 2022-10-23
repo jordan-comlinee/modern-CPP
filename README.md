@@ -4,7 +4,8 @@
 <br><br><br><br>
 <h2>new 와 delete</h2>
 <br>
-new와 delete는 모두 C++의 기본 연산자이다
+new와 delete는 모두 C++의 기본 연산자이다.
+<br>
 delete는 동적으로 배열을 생성한 경우 사용이 가능하다. 
 
 ```c++
