@@ -15,6 +15,9 @@ delete [] c;
 
 <h2> call by value VS call by reference VS call by address</h2>
 <br>
+value : 값을 그대로 복사하므로 따로 메모리를 할당한다.
+reference : &
+address : *
 <h2> 얕은 복사와 깊은 복사</h2>
 <br>
 얕은 복사는 주소를 공유하지만 깊은 복사는 주소를 공유하지 않음(자원을 공유하지 않음)
