@@ -9,24 +9,16 @@ Book::Book(const Book& b) {
 	this->price = price;
 }
 
-Book::Book(const char* title, int price) {
-	int size = strlen(title) + 1;
-	this->title = new char[size];
-	strcpy(this->title, title);
+Book::Book(const string title, int price) {
+	this->title = title;
 	this->price = price;
 }
 
 Book::~Book() {
-	delete title;
 }
 
-void Book::set(const char *title, int price) {
-	if (this->title != NULL) {
-		delete [] this->title;
-	}
-	int size = strlen(title) + 1;
-	this->title = new char[size];
-	strcpy(this->title, title);
+void Book::set(const string title, int price) {
+	this->title = title;
 	this->price = price;
 }
 
