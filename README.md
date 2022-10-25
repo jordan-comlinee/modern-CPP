@@ -12,7 +12,10 @@ delete는 동적으로 배열을 생성한 경우 사용이 가능하다.
 Cube *c = new Cube[4];
 delete [] c;
 ```
-
+<h2>strlen & sizeof</h2>
+<br>
+strlen은 할당받은 문자열의 길이....NULL을 제외함
+sizeof는 데이터가 할당받은 메모리 바이트의 길이
 <h2> call by value VS call by reference VS call by address</h2>
 <br>
 value : 값을 그대로 복사하므로 따로 메모리를 할당한다.
