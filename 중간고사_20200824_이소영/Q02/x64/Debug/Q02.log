@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\User\Desktop\모던 C++ 이소영\중간고사_20200824_이소영\Q02\main.cpp(17,45): error C2017: 이스케이프 시퀀스가 잘못되었습니다.
+C:\Users\User\Desktop\모던 C++ 이소영\중간고사_20200824_이소영\Q02\main.cpp(17,50): error C2664: 'void CCar::get_CarInfo(int *,int *)': 인수 1을(를) 'int'에서 'int *'(으)로 변환할 수 없습니다.
+C:\Users\User\Desktop\모던 C++ 이소영\중간고사_20200824_이소영\Q02\main.cpp(17,40): message : 정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Users\User\Desktop\모던 C++ 이소영\중간고사_20200824_이소영\Q02\CCar.h(10,7): message : 'CCar::get_CarInfo' 선언을 참조하십시오.
