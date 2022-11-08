@@ -11,7 +11,7 @@ public:
         this->size = size;
         scores = new int[size];
     }
-    Dept(const Dept& dept); // 복사 생성자 
+    // Dept(const Dept& dept); // 복사 생성자 
     ~Dept(); // 소멸자 
     int getSize() { return size; }
     void read(); // size 만큼 키보드에서 정수를 읽어 scores 배열에 저장 

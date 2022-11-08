@@ -11,7 +11,7 @@ Person::Person(int id, const char* name) {
 	this->id = id;
 	// name의 문자 개수
 	int len = strlen(name);
-	// name 문자열만큼 공간을 할당해준다.
+	// name 문자열만큼 공간을 할당해준다. \0이 추가되어야 하므로 len+1 로 넣어주어야 함!
 	this->name = new char[len + 1];
 	// name 할당
 	strcpy(this->name, name);
@@ -33,6 +33,7 @@ Person::~Person() {
 }
 
 void Person::changeName(const char* name) {
+	// 할당된 메모리보다 긴 이름은 삽입 불가능함
 	if (strlen(name) > strlen(this->name))
 		return;
 	strcpy(this->name, name);

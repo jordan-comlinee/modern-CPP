@@ -3,8 +3,9 @@
 #include <string>
 using namespace std;
 
+
 // 참조 연산자 이용...Dept &dept로 바꾸면 복사 생성자 사용하지 않아도 바로 사용 가능
-int countPass(Dept dept) { // dept 학과에 60점 이상으로 통과하는 학생의 수 리턴 
+int countPass(Dept& dept) { // dept 학과에 60점 이상으로 통과하는 학생의 수 리턴 
     int count = 0;
     for (int i = 0; i < dept.getSize(); i++) {
         if (dept.isOver60(i)) count++;
@@ -12,6 +13,48 @@ int countPass(Dept dept) { // dept 학과에 60점 이상으로 통과하는 학생의 수 리턴
     return count;
 }
 
+Dept::~Dept() {
+    delete[] scores;
+}
+
+void Dept::read() {
+    cout << size << "개 점수 입력>> ";
+    for (int i = 0; i < size; i++) {
+        cin >> this->scores[i];
+    }
+}
+
+bool Dept::isOver60(int index) {
+    if (this->scores[index] >= 60)
+        return true;
+    else
+        return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 void Dept::read() {
     cout << this->size << "개 정수 입력>> ";
     for (int i = 0; i < size; i++) {
@@ -37,7 +80,7 @@ Dept::Dept(const Dept& dept) {
 Dept::~Dept() {
     //delete []scores;
 }
-
+*/
 
 int main() {
     Dept com(10); // 총 10명이 있는 학과 com 

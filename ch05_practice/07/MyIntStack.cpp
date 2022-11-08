@@ -7,6 +7,31 @@ MyIntStack::MyIntStack() {
 }
 
 bool MyIntStack::push(int n) {
+    if (tos >= 10)
+        return false;
+    else {
+        p[tos] = n;
+        tos++;
+        return true;
+    }
+}
+
+bool MyIntStack::pop(int& n) {
+    tos--;
+    if (tos < 0)
+        return false;
+    else {
+        n = p[tos];
+        return true;
+    }
+}
+
+/*
+MyIntStack::MyIntStack() {
+    tos = 0;
+}
+
+bool MyIntStack::push(int n) {
     if (tos == 10)
         return false;
     else {
@@ -26,7 +51,7 @@ bool MyIntStack::pop(int& n) {
     }
 
 }
-
+*/
 
 int main() {
     MyIntStack a;

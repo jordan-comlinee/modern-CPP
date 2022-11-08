@@ -36,10 +36,11 @@ void Person::changeName(const char* name) {
 		return;
 	strcpy(this->name, name);
 }
+// 값에 의한 호출로 객체가 전달될 때 person 객체의 복사 생성자가 호출된다.
 void f(Person person) {
 	person.changeName("dummy");
 }
-
+// 함수에서 객체를 리턴 시, mother 객체의 복사본이 생성된다.
 Person g() {
 	Person mother(2, "Jane");
 	return mother;
@@ -47,6 +48,7 @@ Person g() {
 
 int main() {
 	Person father(1, "Kitae");
+	// 객체로 초기화하여 객체 생성 시 son 객체의 복사 생성자 호출됨.
 	Person son = father;
 	f(father);
 	g();
