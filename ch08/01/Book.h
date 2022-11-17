@@ -9,7 +9,9 @@ class Book : public Product
 	string author;
 	string title;
 public:
-	Book(int type, string isbn, string author, string title, int id, int price, string productor, string description);
+	Book(string isbn, string author, string title, int id, int price, string productor, string description);
 	void showBook();
+
+	void printinfo();
 };
 

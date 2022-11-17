@@ -11,7 +11,9 @@ class Product
 	string description;
 public:
 	int type;
-	Product(int type, int id, int price, string productor, string description);
+	static int numOfProduct;
+	Product(int id, int price, string productor, string description);
 	void showProduct();
+	void printinfo();
 };
 

@@ -6,7 +6,9 @@ class CompactDisk : public Product
 	string albumName;
 	string artistName;
 public:
-	CompactDisk(int type, string albumName, string artistName, int id, int price, string productor, string description);
+	CompactDisk(string albumName, string artistName, int id, int price, string productor, string description);
 	void showCompactDisk();
+
+	void printinfo();
 };
 
