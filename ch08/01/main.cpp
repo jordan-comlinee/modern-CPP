@@ -35,7 +35,8 @@ int main() {
 		// prd = (Product*)p[i];  
 		// 만약 i번째 p 리스트에 아무것도 저장되어 있지 않으면
 		if (p[i] == NULL)
-			break; 
+			break;
+		//Product* 로 타입 지정해주어야 함
 		//타입에 따라 각각 다르게 정의
 		if (((Product*)p[i])->type == 1) {
 			((CompactDisk*)p[i])->printinfo();
